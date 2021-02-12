@@ -8,6 +8,7 @@
 
   background: url("../../src/images/fox.png") no-repeat center;
   background-size: cover;
+  background-color: #26211c;
 
   @media (max-width: 500px) {
     justify-content: center;
@@ -78,12 +79,11 @@
       margin-left: 5px;
 
       transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-
     }
     &-color {
       background-color: #dfb200;
       border-radius: 4px;
-      
+
       color: black;
       text-transform: uppercase;
       font-weight: 900;
