@@ -1,12 +1,13 @@
 .hero {
   height: 100vh;
-  background: url("../../src/images/fox.png") no-repeat center;
-  background-size: cover;
   padding: 8vh 5vw;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  background: url("../../src/images/fox.png") no-repeat center;
+  background-size: cover;
 
   @media (max-width: 500px) {
     justify-content: center;
@@ -16,6 +17,7 @@
 
   &__content {
     max-width: 700px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +33,7 @@
   &__subtitle {
     display: flex;
     flex-direction: column;
+
     color: #ffcc00;
     font-weight: 400;
     font-size: clamp(2rem, 1.7692rem + 0.641vw, 3rem);
@@ -56,27 +59,31 @@
   &__link {
     padding: 15px 20px;
     margin-right: 10px;
-    text-decoration: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-decoration: none;
     font-size: 9px;
+    color: rgb(221, 221, 221);
 
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    color: rgb(221, 221, 221);
     &:hover {
       svg {
         transform: translateX(5px);
       }
     }
     svg {
+      margin-left: 5px;
+
       transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-      margin-left: 5px;
     }
     &-color {
       background-color: #dfb200;
       border-radius: 4px;
+      
       color: black;
       text-transform: uppercase;
       font-weight: 900;
